@@ -1,0 +1,22 @@
+<html>
+ <head>
+   <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ </head>
+ <body>
+  <a-scene inspector>
+  <a-sky src="images/universe-4.jpg"></a-sky>
+
+    <a-sphere radius="1" src="images/earth.png" position="0 1 -3" rotation="0 360 0" color="#7BC8A4">
+      <a-animation repeat="indefinite" attribute="rotation" dur="20000" easing="linear" from="0 0 0" to="0 360 0"></a-animation>
+      <a-sphere  id="moon" src="images/moon.jpg" position="0 0.1 -2" radius="0.2" rotation="0 180 0"  color="#fff">
+        <a-animation repeat="indefinite" attribute="rotation" dur="50000" easing="linear" from="0 0 0" to="0 360 0"></a-animation>
+        
+      </a-sphere>
+      </a-sphere>
+      <a-camera position="0 1 2"></a-camera>
+
+   </a-scene>
+ </body>
+</html>
+
